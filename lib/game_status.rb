@@ -39,6 +39,12 @@ def won?(board)
   winning_move
 end
 
+<<<<<<< HEAD
+=======
+board = ["X","X","X"]
+won?(board)
+
+>>>>>>> 78a3b25c8d5c1362b5fe3862ba7080470eb55722
 #DRAW CODE
 def draw?(board)
   full?(board) && !won?(board)
@@ -46,7 +52,11 @@ end
 
 #OVER CODE
 def over?(board)
+<<<<<<< HEAD
   won?(board) || draw?(board) || full?(board)  || turn_count(board) == 9
+=======
+  won?(board) || draw?(board) || !full?(board)
+>>>>>>> 78a3b25c8d5c1362b5fe3862ba7080470eb55722
 end
 
 #WINNER CODE
@@ -58,5 +68,11 @@ end
 
 #turn count
 def turn_count(board)
+<<<<<<< HEAD
   board.count{|x| x !=" "}
 end
+=======
+  board.count(|x| x !=" ")
+end
+  
+>>>>>>> 78a3b25c8d5c1362b5fe3862ba7080470eb55722

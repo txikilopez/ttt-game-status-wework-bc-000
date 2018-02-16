@@ -53,7 +53,7 @@ end
 #OVER CODE
 def over?(board)
 <<<<<<< HEAD
-  won?(board) || draw?(board) || full?(board)  || turn_count(board) == 9
+  won?(board) || draw?(board) || full?(board)  || turn_count(board) == board.length
 =======
   won?(board) || draw?(board) || !full?(board)
 >>>>>>> 78a3b25c8d5c1362b5fe3862ba7080470eb55722
